@@ -12,7 +12,7 @@ class UserRoleMixin:
             
         role = user.role
         if not role:
-            raise PermissionDenied("El usuario no tiene rol asignado.")
+            raise PermissionDenied("El usuario no tiene el rol asignado.")
         
         role_permissions = role.permissions
         
